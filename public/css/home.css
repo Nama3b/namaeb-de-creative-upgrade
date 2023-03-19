@@ -34,16 +34,16 @@ html, body {
 
 .navbar {
     min-height: 69px !important;
-    border-radius: 0px !important;
-    margin-bottom: 0px !important;
+    border-radius: 0 !important;
+    margin-bottom:0 !important;
     background-color: darkred;
 }
 
 .fixed-top {
     position: fixed;
-    top: 0px;
-    right: 0px;
-    left: 0px;
+    top:0;
+    right:0;
+    left:0;
     z-index: 1030;
 }
 
@@ -75,13 +75,13 @@ nav.btn-dark {
 }
 
 .nav-item a.active:hover {
-    margin-bottom: 0px;
+    margin-bottom:0;
 }
 
 /* =========================================MAIN========================================= */
 
 #main {
-    background: url('../images/website-Design-Background.jpg') no-repeat;
+    background: url("/image/header-background.jpg") no-repeat;
     background-size: 100%;
     height: 547px;
 }
@@ -239,7 +239,7 @@ div.display-1:hover p i:empty {
     }
 
     .main-about .col-lg-7 {
-        margin-left: 0px !important;
+        margin-left:0 !important;
     }
 
     #main .display-1 div::before {
@@ -403,7 +403,7 @@ div.display-1:hover p i:empty {
 
 .contact-info ul li {
     display: block;
-    padding: 3px 0px 3px 0px;
+    padding: 3px 0 3px 0;
 }
 
 .more-contact-info a {
@@ -450,7 +450,7 @@ div.display-1:hover p i:empty {
 
 @media (max-width: 576px) {
     .main-about .col-lg-7 {
-        margin-left: 0px !important;
+        margin-left:0 !important;
         font-size: 13px;
     }
 
@@ -479,7 +479,7 @@ div.display-1:hover p i:empty {
 
 .animation-action {
     margin-top: 33px;
-    background: url('../images/img-action-1.jpg') no-repeat;
+    background: url('/image/img-action-1.jpg') no-repeat;
     background-position-x: center;
     height: 2000px;
 }
@@ -496,10 +496,10 @@ div.display-1:hover p i:empty {
     left: 3px;
     width: 29px;
     height: 29px;
-    box-shadow: rgb(255 255 255 / 73%) 0px 0px 29px;
+    box-shadow: rgb(255 255 255 / 73%)0 0 29px;
     transform: rotate(45deg);
     background-color: #e4e6e1;
-    font-family: arial;
+    font-family: arial, sans-serif;
     position: relative;
 }
 
@@ -538,7 +538,7 @@ div.display-1:hover p i:empty {
     height: 2149px;
     background: white;
     border: 3px solid #ffa1a1;
-    box-shadow: rgb(255 0 0) 0px 0px 37px;
+    box-shadow: rgb(255 0 0)0 0 37px;
 }
 
 .border-right {
@@ -547,7 +547,7 @@ div.display-1:hover p i:empty {
     height: 2149px;
     background: white;
     border: 3px solid #ffa1a1;
-    box-shadow: rgb(255 0 0) 0px 0px 37px;
+    box-shadow: rgb(255 0 0)0 0 37px;
 }
 
 .service-left, .service-right {
@@ -633,7 +633,7 @@ div.display-1:hover p i:empty {
 
 .service-footer {
     margin-left: 11px;
-    background: url('../images/239356830_598023524915565_7721248523465282672_n.png') no-repeat;
+    background: url('/image/diamond.png') no-repeat;
     background-size: 100%;
     background-position-x: center;
     background-position-y: center;
@@ -865,7 +865,7 @@ div.display-1:hover p i:empty {
     border: 2px solid darkred;
     width: 220px;
     height: 220px;
-    padding: 64px 0px;
+    padding: 64px 0;
     border-radius: 50%;
     background: #16171b;
     position: absolute;
@@ -890,7 +890,6 @@ div.display-1:hover p i:empty {
 
 .title-ex .time-line h2 {
     font-weight: bold;
-    font-size: 29px;
     color: #fff;
     text-transform: uppercase;
     position: relative;
@@ -1169,7 +1168,7 @@ span.carousel-space {
 }
 
 .main-contact {
-    background: url('../images/contact-img.png') no-repeat;
+    background: url("/image/contact-img.png") no-repeat;
     background-size: 100%;
     height: 777px;
 }
@@ -1262,22 +1261,22 @@ span.carousel-space {
 
     .input-1 {
         margin-left: -153px;
-        margin-right: 0px !important;
+        margin-right:0 !important;
     }
 
     .input-2 {
         margin-left: -119px;
-        margin-right: 0px !important;
+        margin-right:0 !important;
     }
 
     .input-3 {
         margin-left: -73px;
-        margin-right: 0px !important;
+        margin-right:0 !important;
     }
 
     .input-4 {
         margin-left: -37px;
-        margin-right: 0px !important;
+        margin-right:0 !important;
     }
 
     .contact-form button {
@@ -1320,22 +1319,22 @@ span.carousel-space {
 
     .input-1 {
         margin-left: -133px;
-        margin-right: 0px !important;
+        margin-right:0 !important;
     }
 
     .input-2 {
         margin-left: -99px;
-        margin-right: 0px !important;
+        margin-right:0 !important;
     }
 
     .input-3 {
         margin-left: -53px;
-        margin-right: 0px !important;
+        margin-right:0 !important;
     }
 
     .input-4 {
         margin-left: -17px;
-        margin-right: 0px !important;
+        margin-right:0 !important;
     }
 
     .contact-form button {
@@ -1378,22 +1377,22 @@ span.carousel-space {
 
     .input-1 {
         margin-left: -113px;
-        margin-right: 0px !important;
+        margin-right:0 !important;
     }
 
     .input-2 {
         margin-left: -69px;
-        margin-right: 0px !important;
+        margin-right:0 !important;
     }
 
     .input-3 {
         margin-left: -23px;
-        margin-right: 0px !important;
+        margin-right:0 !important;
     }
 
     .input-4 {
         margin-left: 17px;
-        margin-right: 0px !important;
+        margin-right:0 !important;
     }
 
     .contact-form button {
@@ -1436,22 +1435,22 @@ span.carousel-space {
 
     .input-1 {
         margin-left: -113px;
-        margin-right: 0px !important;
+        margin-right:0 !important;
     }
 
     .input-2 {
         margin-left: -69px;
-        margin-right: 0px !important;
+        margin-right:0 !important;
     }
 
     .input-3 {
         margin-left: -23px;
-        margin-right: 0px !important;
+        margin-right:0 !important;
     }
 
     .input-4 {
         margin-left: 17px;
-        margin-right: 0px !important;
+        margin-right:0 !important;
     }
 
     .contact-form button {
@@ -1484,7 +1483,7 @@ span.carousel-space {
     font-size: 18px;
     width: fit-content;
     border-bottom: 2px solid white;
-    margin: -11px 0px 5px 0px;
+    margin: -11px 0 5px 0;
 }
 
 @media (max-width: 576px) {
