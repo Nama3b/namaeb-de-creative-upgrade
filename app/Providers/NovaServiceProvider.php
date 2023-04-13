@@ -2,9 +2,23 @@
 
 namespace App\Providers;
 
+use App\Nova\About;
+use App\Nova\Client;
+use App\Nova\Contact;
+use App\Nova\Dashboards\Main;
+use App\Nova\Education;
+use App\Nova\Experience;
+use App\Nova\Language;
+use App\Nova\Project;
+use App\Nova\Service;
+use App\Nova\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
+use Laravel\Nova\Menu\MenuItem;
+use Laravel\Nova\Menu\MenuSection;
 use Laravel\Nova\Nova;
 use Laravel\Nova\NovaApplicationServiceProvider;
+use Oneduo\NovaFileManager\NovaFileManager;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
@@ -16,6 +30,33 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     public function boot()
     {
         parent::boot();
+        Nova::mainMenu(function (Request $request) {
+            return [
+                MenuSection::make(__('Social'), [
+                    MenuItem::resource(About::class),
+                    MenuItem::resource(Client::class),
+                    MenuItem::resource(Contact::class),
+                    MenuItem::resource(Service::class),
+                    MenuItem::resource(User::class),
+                ])->icon('user')->collapsable(),
+
+                MenuSection::make(__('File Manager'))
+                    ->path('/nova-file-manager')
+                    ->icon('server'),
+
+                MenuSection::make(__('Skills'), [
+                    MenuItem::resource(Education::class),
+                    MenuItem::resource(Experience::class),
+                    MenuItem::resource(Project::class),
+                ])->icon('server')->collapsable(),
+
+                MenuSection::make(__('Resources'), [
+                    MenuItem::resource(Language::class),
+                ])->icon('document-text')->collapsable(),
+
+            ];
+        });
+
     }
 
     /**
@@ -23,7 +64,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
      *
      * @return void
      */
-    protected function routes()
+    protected function routes(): void
     {
         Nova::routes()
                 ->withAuthenticationRoutes()
@@ -38,7 +79,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
      *
      * @return void
      */
-    protected function gate()
+    protected function gate(): void
     {
         Gate::define('viewNova', function ($user) {
             return in_array($user->email, [
@@ -52,10 +93,10 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
      *
      * @return array
      */
-    protected function dashboards()
+    protected function dashboards(): array
     {
         return [
-            new \App\Nova\Dashboards\Main,
+            new Main,
         ];
     }
 
@@ -64,9 +105,12 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
      *
      * @return array
      */
-    public function tools()
+    public function tools(): array
     {
-        return [];
+        return [
+            NovaFileManager::make(),
+        ];
+
     }
 
     /**
@@ -74,7 +118,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
         //
     }
