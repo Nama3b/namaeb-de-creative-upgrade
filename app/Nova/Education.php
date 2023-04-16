@@ -60,11 +60,11 @@ class Education extends Resource
             Date::make('End Date', 'end_date'),
 
             Flexible::make('Certificate')
-                ->addLayout('Certificate', 'Certificate', [
+                ->addLayout('Certificate item', 'Certificate', [
                     Text::make('Name'),
                     Image::make('Evidence')
                 ])
-                ->button('Add more certificates'),
+                ->button('Add certificates'),
         ];
     }
 

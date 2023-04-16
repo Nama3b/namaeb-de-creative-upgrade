@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('content');
             $table->unsignedBigInteger('position_id');
             $table->unsignedBigInteger('level_id');
-            $table->string('reward');
+            $table->json('reward')->nullable();
             $table->timestamps();
             $table->softDeletes();
 

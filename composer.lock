@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fc86234c61083f4bc1e51a0865b3beb",
+    "content-hash": "0d834ce5066c4644085a004c5c7bbf12",
     "packages": [
         {
             "name": "brick/math",
@@ -2769,6 +2769,61 @@
             "time": "2023-02-02T10:41:53+00:00"
         },
         {
+            "name": "nikaia/nova-rating-field",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikaia/nova-rating-field.git",
+                "reference": "6db4fdf4fc1177af401645149cda814f1fce27c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikaia/nova-rating-field/zipball/6db4fdf4fc1177af401645149cda814f1fce27c3",
+                "reference": "6db4fdf4fc1177af401645149cda814f1fce27c3",
+                "shasum": ""
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.11"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Nikaia\\Rating\\RatingServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nikaia\\Rating\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nassif Bourguig",
+                    "email": "nbourguig@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add start rating field to Laravel Nova",
+            "homepage": "https://github.com/nikaia/nova-rating-field",
+            "keywords": [
+                "Rating",
+                "field",
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/nikaia/nova-rating-field/issues",
+                "source": "https://github.com/nikaia/nova-rating-field/tree/1.0.2"
+            },
+            "time": "2019-12-24T07:19:41+00:00"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "v4.15.4",
             "source": {
@@ -2823,6 +2878,51 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.4"
             },
             "time": "2023-03-05T19:49:14+00:00"
+        },
+        {
+            "name": "nova-fields/rating",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nova-fields/rating.git",
+                "reference": "0aaaf5e7aad611f92074c03673e07fc7de782906"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nova-fields/rating/zipball/0aaaf5e7aad611f92074c03673e07fc7de782906",
+                "reference": "0aaaf5e7aad611f92074c03673e07fc7de782906",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NovaField\\Rating\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NovaField\\Rating\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova field.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/nova-fields/rating/issues",
+                "source": "https://github.com/nova-fields/rating/tree/v1.0.1"
+            },
+            "time": "2018-08-24T08:53:09+00:00"
         },
         {
             "name": "nova-kit/nova-packages-tool",

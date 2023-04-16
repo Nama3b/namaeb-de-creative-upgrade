@@ -2,12 +2,14 @@
 
 namespace App\Nova;
 
-use Laravel\Nova\Fields\BelongsTo;
-use Laravel\Nova\Fields\HasMany;
+use Exception;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Oneduo\NovaFileManager\FileManager;
+use Whitecube\NovaFlexibleContent\Flexible;
 
 class Experience extends Resource
 {
@@ -31,7 +33,7 @@ class Experience extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'title',
     ];
 
     /**
@@ -39,6 +41,7 @@ class Experience extends Resource
      *
      * @param NovaRequest $request
      * @return array
+     * @throws Exception
      */
     public function fields(NovaRequest $request): array
     {
@@ -51,13 +54,27 @@ class Experience extends Resource
             Textarea::make('Content')
                 ->rules('required'),
 
-            BelongsTo::make('Position','positions',\App\Models\Position::class)
+            Select::make('Position', 'positions')
+                ->options(
+                    \App\Models\Position::pluck('name', 'id')
+                )
+                ->displayUsingLabels()
                 ->rules('required'),
 
-            BelongsTo::make('Level','levels',\App\Models\Level::class)
+            Select::make('Level', 'levels')
+                ->options(
+                    \App\Models\Level::pluck('name', 'id')
+                )
+                ->displayUsingLabels()
                 ->rules('required'),
 
-            Text::make('Reward')
+            Flexible::make('Reward')
+                ->addLayout('Reward item', 'Reward', [
+                    Text::make('Name'),
+                    FileManager::make('Authentication'),
+                ])
+                ->rules('required')
+                ->button('Add rewards'),
         ];
     }
 }

@@ -9,6 +9,8 @@ use App\Nova\Dashboards\Main;
 use App\Nova\Education;
 use App\Nova\Experience;
 use App\Nova\Language;
+use App\Nova\Level;
+use App\Nova\Position;
 use App\Nova\Project;
 use App\Nova\Service;
 use App\Nova\User;
@@ -48,9 +50,11 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                     MenuItem::resource(Education::class),
                     MenuItem::resource(Experience::class),
                     MenuItem::resource(Project::class),
-                ])->icon('server')->collapsable(),
+                ])->icon('calendar')->collapsable(),
 
                 MenuSection::make(__('Resources'), [
+                    MenuItem::resource(Level::class),
+                    MenuItem::resource(Position::class),
                     MenuItem::resource(Language::class),
                 ])->icon('document-text')->collapsable(),
 
