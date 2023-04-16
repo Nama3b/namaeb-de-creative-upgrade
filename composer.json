@@ -11,6 +11,7 @@
         "laravel/nova": "~4.0",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
+        "nikaia/nova-rating-field": "^1.0",
         "oneduo/nova-file-manager": "^0.9.0",
         "whitecube/nova-flexible-content": "^1.0"
     },

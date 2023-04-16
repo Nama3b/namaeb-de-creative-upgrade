@@ -2,9 +2,16 @@
 
 namespace App\Nova;
 
-use Illuminate\Http\Request;
+use Exception;
+use Laravel\Nova\Fields\Boolean;
+use Laravel\Nova\Fields\Date;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Select;
+use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Textarea;
+use Laravel\Nova\Fields\URL;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Whitecube\NovaFlexibleContent\Flexible;
 
 class Project extends Resource
 {
@@ -13,7 +20,7 @@ class Project extends Resource
      *
      * @var class-string<\App\Models\Project>
      */
-    public static $model = \App\Models\Project::class;
+    public static string $model = \App\Models\Project::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -28,63 +35,59 @@ class Project extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'title, name',
     ];
 
     /**
      * Get the fields displayed by the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
+     * @param NovaRequest $request
      * @return array
+     * @throws Exception
      */
-    public function fields(NovaRequest $request)
+    public function fields(NovaRequest $request): array
     {
         return [
             ID::make()->sortable(),
+
+            Text::make('title')
+                ->rules('required', 'max:100'),
+
+            Text::make('name')
+                ->rules('required', 'max:100'),
+
+            Select::make('Position', 'positions')
+                ->options(
+                    \App\Models\Position::pluck('name', 'id')
+                )
+                ->displayUsingLabels()
+                ->rules('required'),
+
+            Select::make('Language', 'languages')
+                ->options(
+                    \App\Models\Language::pluck('name', 'id')
+                )
+                ->displayUsingLabels()
+                ->rules('required'),
+
+            URL::make('Page URL')
+                ->hideFromIndex(),
+
+            Date::make('Start Date','start_date'),
+
+            Date::make('End date','end_date'),
+
+            Boolean::make('Status'),
+
+            Flexible::make('Description')
+                ->addLayout('Item', 'description', [
+                        Text::make('Title')
+                            ->rules('required'),
+                        Textarea::make('Description')
+                            ->rules('required'),
+                ])
+                ->rules('required')
+                ->button('Add description'),
         ];
-    }
-
-    /**
-     * Get the cards available for the request.
-     *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
-     * @return array
-     */
-    public function cards(NovaRequest $request)
-    {
-        return [];
-    }
-
-    /**
-     * Get the filters available for the resource.
-     *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
-     * @return array
-     */
-    public function filters(NovaRequest $request)
-    {
-        return [];
-    }
-
-    /**
-     * Get the lenses available for the resource.
-     *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
-     * @return array
-     */
-    public function lenses(NovaRequest $request)
-    {
-        return [];
-    }
-
-    /**
-     * Get the actions available for the resource.
-     *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
-     * @return array
-     */
-    public function actions(NovaRequest $request)
-    {
-        return [];
     }
 }

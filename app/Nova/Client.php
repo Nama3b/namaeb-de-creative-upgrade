@@ -2,11 +2,11 @@
 
 namespace App\Nova;
 
-use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Nikaia\Rating\Rating;
 
 class Client extends Resource
 {
@@ -53,6 +53,13 @@ class Client extends Resource
             Textarea::make('Comment')
                 ->rules('required'),
 
+//            Rating::make('Rate')->min(0)->max(5)
+//                ->increment(0.5)
+//                ->hideRating()
+//                ->withStyles([
+//                    'star-size' => 15,
+//                    'rounded-corners' => true,
+//                ])->onlyOnIndex()->sortable(),
         ];
     }
 }

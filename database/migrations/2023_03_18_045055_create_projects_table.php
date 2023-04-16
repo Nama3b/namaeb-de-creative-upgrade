@@ -15,8 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('name');
-            $table->string('meta_title');
-            $table->text('meta_description');
+            $table->json('description');
             $table->unsignedBigInteger('position_id');
             $table->unsignedBigInteger('language_type');
             $table->string('url_page')->nullable();

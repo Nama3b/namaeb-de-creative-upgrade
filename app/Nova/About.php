@@ -10,6 +10,7 @@ use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
+use Laravel\Nova\Fields\URL;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Oneduo\NovaFileManager\FileManager;
 
@@ -79,7 +80,7 @@ class About extends Resource
                 ])
                 ->hideFromIndex(),
 
-            Text::make('Relate URL', 'relate_url'),
+            URL::make('Relate URL', 'relate_url'),
 
             Textarea::make('Hobby'),
 
