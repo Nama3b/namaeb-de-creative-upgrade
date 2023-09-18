@@ -15,12 +15,13 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('title');
             $table->text('description');
             $table->string('phone_number')->unique();
             $table->string('address');
             $table->date('birthday');
             $table->boolean('gender')->nullable();
-            $table->string('relate_url')->nullable();
+            $table->json('relate_url')->nullable();
             $table->text('hobby')->nullable();
             $table->string('image');
             $table->text('cv_url')->nullable();
