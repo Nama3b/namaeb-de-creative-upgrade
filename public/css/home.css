@@ -80,22 +80,22 @@ nav.btn-dark {
 
 /* =========================================MAIN========================================= */
 
-#main {
+#home-main {
     background: url("/image/header-background.jpg") no-repeat;
     background-size: 100%;
     height: 547px;
 }
 
-#main .display-1 {
+#home-main .display-1 {
     width: fit-content;
     padding-top: 555px;
 }
 
-#main .display-1:after {
+#home-main .display-1:after {
     display: none;
 }
 
-#main .my-name {
+#home-main .my-name {
     display: inline-block;
     border-bottom: 9px double darkred;
 }
@@ -202,14 +202,14 @@ div.display-1:hover p i:empty {
 }
 
 @media (max-width: 1192px) {
-    #main .display-1 {
+    #home-main .display-1 {
         width: fit-content !important;
         padding-top: 444px !important;
     }
 }
 
 @media (max-width: 992px) {
-    #main {
+    #home-main {
         height: 315px;
     }
 
@@ -217,60 +217,60 @@ div.display-1:hover p i:empty {
         margin-left: 7px;
     }
 
-    #main .display-1 {
+    #home-main .display-1 {
         width: fit-content !important;
         padding-top: 373px !important;
     }
 
-    #main .display-1 div::before {
+    #home-main .display-1 div::before {
         width: 137px !important;
         height: 137px !important;
     }
 }
 
 @media (max-width: 768px) {
-    #main {
+    #home-main {
         height: 255px;
     }
 
-    #main .display-1 {
+    #home-main .display-1 {
         width: fit-content !important;
         padding-top: 311px !important;
     }
 
-    .main-about .col-lg-7 {
+    .home-main-about .col-lg-7 {
         margin-left:0 !important;
     }
 
-    #main .display-1 div::before {
+    #home-main .display-1 div::before {
         width: 111px !important;
         height: 111px !important;
     }
 
-    #main .display-1 p {
+    #home-main .display-1 p {
         font-size: 37%;
     }
 }
 
 @media (max-width: 576px) {
-    #main {
+    #home-main {
         height: 205px;
     }
 
-    #main .display-1 {
+    #home-main .display-1 {
         width: fit-content !important;
         padding-top: 270px !important;
     }
 
-    #main .display-1 p i {
+    #home-main .display-1 p i {
         font-size: 18px !important;
     }
 
-    #main .display-1 p {
+    #home-main .display-1 p {
         font-size: 29%;
     }
 
-    #main .display-1 div::before {
+    #home-main .display-1 div::before {
         width: 100px !important;
         height: 100px !important;
     }
@@ -298,12 +298,12 @@ div.display-1:hover p i:empty {
     transform: translateX(-50%);
 }
 
-.main .col-12 {
+.home-main .col-12 {
     transform: translateY(60px);
     transition: transform 1000ms ease-in-out;
 }
 
-.main .col-12.appear {
+.home-main .col-12.appear {
     transform: translateY(0);
 }
 
@@ -338,13 +338,13 @@ div.display-1:hover p i:empty {
     left: -77%;
 }
 
-.main-about .col-lg-4, .col-lg-7 {
+.home-main-about .col-lg-4, .col-lg-7 {
     background: #16171b;
     border-radius: 5px;
     color: white;
 }
 
-.main-about .col-lg-4 {
+.home-main-about .col-lg-4 {
     border: 2px solid darkred;
     padding: 29px;
     margin-bottom: 29px;
@@ -353,7 +353,7 @@ div.display-1:hover p i:empty {
     transition: transform 1000ms ease-in-out;
 }
 
-.main-about .col-lg-7 {
+.home-main-about .col-lg-7 {
     font-size: 19px;
     margin-left: 37px;
     padding: 20px 37px;
@@ -362,11 +362,11 @@ div.display-1:hover p i:empty {
     transition: transform 1500ms ease-in-out;
 }
 
-.main-about .col-lg-4.appear, .main-about .col-lg-7.appear {
+.home-main-about .col-lg-4.appear, .home-main-about .col-lg-7.appear {
     transform: translateY(0);
 }
 
-.main-about .col-lg-7 hr {
+.home-main-about .col-lg-7 hr {
     margin-top: 17px;
     border: 1px solid darkred;
     width: 100%;
@@ -439,7 +439,7 @@ div.display-1:hover p i:empty {
         margin-top: -37px !important;
     }
 
-    .main-about .col-12 {
+    .home-main-about .col-12 {
         display: block !important;
     }
 
@@ -449,7 +449,7 @@ div.display-1:hover p i:empty {
 }
 
 @media (max-width: 576px) {
-    .main-about .col-lg-7 {
+    .home-main-about .col-lg-7 {
         margin-left:0 !important;
         font-size: 13px;
     }
@@ -466,7 +466,7 @@ div.display-1:hover p i:empty {
         margin-top: -49px !important;
     }
 
-    .main-about .col-12 {
+    .home-main-about .col-12 {
         display: block !important;
     }
 
@@ -792,13 +792,13 @@ div.display-1:hover p i:empty {
     margin-bottom: 49px;
 }
 
-.main-experience {
+.home-main-experience {
     margin-bottom: 25px;
     transition: transform 500ms ease-in-out;
     transform: scale(1, 1);
 }
 
-.main-experience:hover {
+.home-main-experience:hover {
     transition: transform 500ms ease-in-out;
     transform: scale(1.1, 1.1);
 }
@@ -816,11 +816,11 @@ div.display-1:hover p i:empty {
     transform: translateX(0);
 }
 
-.main-experience .col-12 {
+.home-main-experience .col-12 {
     display: flex;
 }
 
-.main-experience .col-lg-8 {
+.home-main-experience .col-lg-8 {
     background: #16171b;
     color: white;
     font-size: 19px;
@@ -829,12 +829,12 @@ div.display-1:hover p i:empty {
     border-radius: 7px;
 }
 
-.main-experience .col-lg-3 {
+.home-main-experience .col-lg-3 {
     padding: 5px;
     margin-right: 15px;
 }
 
-.main-experience .col-lg-3 h3 {
+.home-main-experience .col-lg-3 h3 {
     color: darkred;
     font-weight: bold;
 }
@@ -932,39 +932,39 @@ div.display-1:hover p i:empty {
 }
 
 @media (max-width: 768px) {
-    .main-experience .col-12 {
+    .home-main-experience .col-12 {
         display: block !important;
         margin-bottom: 37px;
     }
 
-    .main-experience .ex-section {
+    .home-main-experience .ex-section {
         display: block !important;
     }
 
-    .main-experience .col-lg-4 {
+    .home-main-experience .col-lg-4 {
         margin-bottom: 10px;
     }
 
-    .main-experience .col-lg-8 {
+    .home-main-experience .col-lg-8 {
         margin-left: 0;
     }
 }
 
 @media (max-width: 576px) {
-    .main-experience .col-12 {
+    .home-main-experience .col-12 {
         display: block !important;
         margin-bottom: 37px;
     }
 
-    .main-experience .ex-section {
+    .home-main-experience .ex-section {
         display: block !important;
     }
 
-    .main-experience .col-lg-4 {
+    .home-main-experience .col-lg-4 {
         margin-bottom: 10px;
     }
 
-    .main-experience .col-lg-8 {
+    .home-main-experience .col-lg-8 {
         margin-left: 0;
     }
 }
@@ -979,7 +979,7 @@ div.display-1:hover p i:empty {
     margin-bottom: 50px;
 }
 
-.main-education {
+.home-main-education {
     font-size: 17px;
     background: #16171b;
     border-radius: 5px;
@@ -990,20 +990,20 @@ div.display-1:hover p i:empty {
     transition: transform 1500ms ease-in-out;
 }
 
-.main-education.appear {
+.home-main-education.appear {
     transform: rotateX(0deg);
 }
 
-.main-education:hover {
+.home-main-education:hover {
     transition: transform 500ms ease-in-out;
     transform: scale(1.1, 1.1);
 }
 
-.main-education h2 {
+.home-main-education h2 {
     color: darkred;
 }
 
-.main-education hr {
+.home-main-education hr {
     border-bottom: 2px solid darkred;
     width: 100%;
 }
@@ -1167,7 +1167,7 @@ span.carousel-space {
     margin-bottom: 50px;
 }
 
-.main-contact {
+.home-main-contact {
     background: url("/image/contact-img.png") no-repeat;
     background-size: 100%;
     height: 777px;
@@ -1239,7 +1239,7 @@ span.carousel-space {
 }
 
 @media (max-width: 1192px) {
-    .main-contact {
+    .home-main-contact {
         height: 555px;
     }
 
@@ -1293,7 +1293,7 @@ span.carousel-space {
 }
 
 @media (max-width: 992px) {
-    .main-contact {
+    .home-main-contact {
         height: 444px;
     }
 
@@ -1351,7 +1351,7 @@ span.carousel-space {
 }
 
 @media (max-width: 768px) {
-    .main-contact {
+    .home-main-contact {
         height: 333px;
     }
 
@@ -1409,7 +1409,7 @@ span.carousel-space {
 }
 
 @media (max-width: 576px) {
-    .main-contact {
+    .home-main-contact {
         height: 282px;
     }
 
