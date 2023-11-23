@@ -13,11 +13,12 @@ return new class extends Migration
     {
         Schema::create('experiences', function (Blueprint $table) {
             $table->id();
+            $table->string('introduce');
             $table->string('title');
             $table->text('content');
             $table->unsignedBigInteger('position_id');
             $table->unsignedBigInteger('level_id');
-            $table->json('reward')->nullable();
+            $table->json('technology_using')->nullable();
             $table->timestamps();
             $table->softDeletes();
 
