@@ -23,7 +23,7 @@ return new class extends Migration
             $table->boolean('gender')->nullable();
             $table->json('relate_url')->nullable();
             $table->text('hobby')->nullable();
-            $table->string('image');
+            $table->text('image');
             $table->text('cv_url')->nullable();
             $table->timestamps();
             $table->softDeletes();

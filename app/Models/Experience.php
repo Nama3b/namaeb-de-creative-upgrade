@@ -9,10 +9,21 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Carbon;
 
 /**
  * App\Models\Experience
  *
+ * @property int $id
+ * @property string $introduce
+ * @property string $title
+ * @property string $content
+ * @property int $position_id
+ * @property int $level_id
+ * @property string|null $technology_using
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Carbon|null $deleted_at
  * @property-read Collection<int, Level> $levels
  * @property-read int|null $levels_count
  * @property-read Collection<int, Position> $positions
@@ -21,6 +32,16 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @method static Builder|Experience newQuery()
  * @method static Builder|Experience onlyTrashed()
  * @method static Builder|Experience query()
+ * @method static Builder|Experience whereContent($value)
+ * @method static Builder|Experience whereCreatedAt($value)
+ * @method static Builder|Experience whereDeletedAt($value)
+ * @method static Builder|Experience whereId($value)
+ * @method static Builder|Experience whereIntroduce($value)
+ * @method static Builder|Experience whereLevelId($value)
+ * @method static Builder|Experience wherePositionId($value)
+ * @method static Builder|Experience whereTechnologyUsing($value)
+ * @method static Builder|Experience whereTitle($value)
+ * @method static Builder|Experience whereUpdatedAt($value)
  * @method static Builder|Experience withTrashed()
  * @method static Builder|Experience withoutTrashed()
  * @mixin Eloquent

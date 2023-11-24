@@ -2,11 +2,13 @@
 
 namespace App\Nova;
 
+use App\Models\Rate;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Nikaia\Rating\Rating;
+use NormanHuth\NovaRadioField\Radio;
 
 class Client extends Resource
 {
@@ -30,7 +32,7 @@ class Client extends Resource
      * @var array
      */
     public static $search = [
-        'title, name',
+        'name, content',
     ];
 
     /**
@@ -44,14 +46,16 @@ class Client extends Resource
         return [
             ID::make()->sortable(),
 
-            Text::make('Title')
-                ->rules('required', 'max:100'),
-
             Text::make('Name')
                 ->rules('required', 'max:100'),
 
             Textarea::make('Comment')
                 ->rules('required'),
+
+            Radio::make('PM rating', 'pm_rate_id')
+                ->options([1, 2, 3, 4, 5])
+                ->inline()
+                ->gap(8),
 
 //            Rating::make('Rate')->min(0)->max(5)
 //                ->increment(0.5)

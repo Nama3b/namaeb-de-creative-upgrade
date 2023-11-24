@@ -19,6 +19,8 @@ class DatabaseSeeder extends Seeder
             AboutSeeder::class,
             ServiceSeeder::class,
             ExperienceSeeder::class,
+            EducationSeeder::class,
+            ClientSeeder::class,
 
         ]);
     }

@@ -550,10 +550,18 @@ div.display-1:hover p i:empty {
     box-shadow: rgb(255 0 0)0 0 37px;
 }
 
-.service-left, .service-right {
+.service-main .service-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+    gap: 20px;
+}
+
+.service-main .service-item {
     color: white;
     height: 333px;
     overflow: hidden;
+    padding: 0 100px;
+    margin: 0 150px;
 }
 
 .service-left {
@@ -568,23 +576,23 @@ div.display-1:hover p i:empty {
     transition: transform 2000ms ease-out;
 }
 
-.service-left.appear, .service-right.appear {
+.service-item.appear {
     transform: translateX(0);
 }
 
-.service-left .img, .service-right .img {
+.service-item .img {
     transform: translateY(0);
     transition: all 0.7s ease-in-out;
 }
 
-.service-left .info, .service-right .info {
+.service-item .info {
     height: 29px;
     margin-top: -50px;
     opacity: 0;
     transition: all 0.7s ease-in-out;
 }
 
-.service-left .info p, .service-right .info p {
+.service-item .info p {
     font-size: 13px;
     position: relative;
     color: white;
@@ -592,37 +600,32 @@ div.display-1:hover p i:empty {
     text-align: center;
 }
 
-.service-left:hover .info, .service-right:hover .info {
+.service-item:hover .info {
     visibility: visible;
     opacity: 1;
 }
 
-.service-left .info, .service-right .info {
+.service-item .info {
     top: auto;
     transform: translateY(100%);
 }
 
-.service-left:hover .img, .service-right:hover .img {
+.service-item:hover .img {
     transform: translateY(-50px);
 }
 
-.service-left:hover .info, .service-right:hover .info {
+.service-item:hover .info {
     transform: translateY(0);
 }
 
-.service-left h4, .service-right h4 {
+.service-item h4 {
     color: darkred;
     padding-bottom: 2px;
     border-bottom: 2px solid darkred;
     width: fit-content;
 }
 
-.service-left:hover {
-    border-bottom: 4px solid darkred;
-    cursor: pointer;
-}
-
-.service-right:hover {
+.service-item:hover {
     border-bottom: 4px solid darkred;
     cursor: pointer;
 }
@@ -1168,7 +1171,7 @@ span.carousel-space {
 }
 
 .home-main-contact {
-    background: url("/image/contact-img.png") no-repeat;
+    background: url("../image/contact-img.png") no-repeat;
     background-size: 100%;
     height: 777px;
 }

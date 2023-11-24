@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use Carbon\Carbon;
+use DateTime;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -25,6 +27,7 @@ class AboutSeeder extends Seeder
             'gender' => 1,
             'relate_url' => json_encode(["github" => "", "twitter" => "", "linkedin" => "", "profile_website" => ""]),
             'image' => 'https://scontent.fhan14-3.fna.fbcdn.net/v/t1.15752-9/403669435_875919380936417_1536252136765944219_n.jpg?stp=dst-jpg_s2048x2048&_nc_cat=104&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=W0gvWcdHqmYAX8F3Bfn&_nc_ht=scontent.fhan14-3.fna&oh=03_AdSONvomgq2AuuD1Wb_YNyftrd7VO9LpCnHOWa3ouzQB0g&oe=65866F11',
+            'birthday' => Carbon::create('2000','10','22'),
         ]);
     }
 }

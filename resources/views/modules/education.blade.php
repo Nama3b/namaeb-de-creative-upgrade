@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-12 fade-in">
                     <div class="">
-                        <div class="main-education slide-in">
+                        <div class="home-main-education slide-in">
                             <h2>MSC OF INTERNATIONAL INNOVATION (COMPUTER SCIENCE PATHWAY)</h2>
                             <p>Goethe University Frankfurt, Germany</p>
                             <hr>
@@ -21,7 +21,7 @@
                         </div>
                     </div>
                     <div class="">
-                        <div class="main-education slide-in">
+                        <div class="home-main-education slide-in">
                             <h2>BACHELOR DEGREE</h2>
                             <p>Bachkhoa-aptech, Viet Nam</p>
                             <hr>
