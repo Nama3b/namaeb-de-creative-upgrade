@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
@@ -51,18 +52,18 @@ class Experience extends Model
     use HasFactory, SoftDeletes;
 
     /**
-     * @return HasMany
+     * @return BelongsTo
      */
-    public function positions(): HasMany
+    public function positions(): BelongsTo
     {
-        return $this->hasMany(Position::class);
+        return $this->BelongsTo(Position::class);
     }
 
     /**
-     * @return HasMany
+     * @return BelongsTo
      */
-    public function levels(): HasMany
+    public function levels(): BelongsTo
     {
-        return $this->hasMany(Level::class);
+        return $this->BelongsTo(Level::class);
     }
 }

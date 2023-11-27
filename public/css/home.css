@@ -808,6 +808,8 @@ div.display-1:hover p i:empty {
 
 .experience-topic {
     transform: translateX(-100px);
+    display: flex;
+    align-items: center;
 }
 
 .experience-content {
@@ -826,7 +828,7 @@ div.display-1:hover p i:empty {
 .home-main-experience .col-lg-8 {
     background: #16171b;
     color: white;
-    font-size: 19px;
+    font-size: 15px;
     padding: 20px 29px;
     height: fit-content;
     border-radius: 7px;
@@ -858,7 +860,9 @@ div.display-1:hover p i:empty {
 }
 
 .title-ex {
-    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
     width: 220px;
     height: 220px;
     border-radius: 50%;
@@ -899,7 +903,7 @@ div.display-1:hover p i:empty {
     letter-spacing: 2px;
     font-size: 22px;
     margin: 0 30px;
-    padding: 66px 0 0 0;
+    padding: 40px 0 0 0;
     height: 110px;
     text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
 }

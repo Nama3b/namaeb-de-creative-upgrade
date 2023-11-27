@@ -18,7 +18,6 @@ use Illuminate\Support\Carbon;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property Carbon|null $deleted_at
- * @property-read \App\Models\Experience|null $Experiences
  * @method static Builder|Position newModelQuery()
  * @method static Builder|Position newQuery()
  * @method static Builder|Position onlyTrashed()
@@ -36,11 +35,4 @@ class Position extends Model
 {
     use HasFactory, SoftDeletes;
 
-    /**
-     * @return BelongsTo
-     */
-    public function Experiences(): BelongsTo
-    {
-        return $this->belongsTo(Experience::class);
-    }
 }
