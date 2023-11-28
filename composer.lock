@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d834ce5066c4644085a004c5c7bbf12",
+    "content-hash": "839de5126f198faa4547aed4312fb961",
     "packages": [
         {
             "name": "brick/math",
@@ -2880,49 +2880,119 @@
             "time": "2023-03-05T19:49:14+00:00"
         },
         {
-            "name": "nova-fields/rating",
-            "version": "v1.0.1",
+            "name": "norman-huth/nova-basic-package",
+            "version": "1.2.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nova-fields/rating.git",
-                "reference": "0aaaf5e7aad611f92074c03673e07fc7de782906"
+                "url": "https://github.com/Muetze42/nova-basic-package.git",
+                "reference": "2252ccdfc184ca4fef3aa562bd5345617eb70823"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nova-fields/rating/zipball/0aaaf5e7aad611f92074c03673e07fc7de782906",
-                "reference": "0aaaf5e7aad611f92074c03673e07fc7de782906",
+                "url": "https://api.github.com/repos/Muetze42/nova-basic-package/zipball/2252ccdfc184ca4fef3aa562bd5345617eb70823",
+                "reference": "2252ccdfc184ca4fef3aa562bd5345617eb70823",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1.0"
+                "php": "^8.0"
             },
             "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "NovaField\\Rating\\FieldServiceProvider"
+                        "NormanHuth\\NovaBasePackage\\ServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "NovaField\\Rating\\": "src/"
+                    "NormanHuth\\NovaBasePackage\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "A Laravel Nova field.",
+            "authors": [
+                {
+                    "name": "Norman Huth",
+                    "homepage": "https://huth.it"
+                }
+            ],
+            "support": {
+                "docs": "https://github.com/Muetze42/nova-basic-package#readme",
+                "issues": "https://github.com/Muetze42/nova-basic-package/issues",
+                "source": "https://github.com/Muetze42/nova-basic-package"
+            },
+            "funding": [
+                {
+                    "url": "https://huth.it/coffee",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://ko-fi.com/normanhuth",
+                    "type": "ko_fi"
+                }
+            ],
+            "time": "2023-06-20T17:44:15+00:00"
+        },
+        {
+            "name": "norman-huth/nova-radio-field",
+            "version": "1.1.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Muetze42/nova-radio-field.git",
+                "reference": "af23638f46fd50694e4b9536324fd9de8f4aa599"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Muetze42/nova-radio-field/zipball/af23638f46fd50694e4b9536324fd9de8f4aa599",
+                "reference": "af23638f46fd50694e4b9536324fd9de8f4aa599",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "^4.0",
+                "norman-huth/nova-basic-package": "^1.2.0",
+                "php": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NormanHuth\\NovaRadioField\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NormanHuth\\NovaRadioField\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova Radio field.",
             "keywords": [
                 "laravel",
                 "nova"
             ],
             "support": {
-                "issues": "https://github.com/nova-fields/rating/issues",
-                "source": "https://github.com/nova-fields/rating/tree/v1.0.1"
+                "docs": "https://github.com/Muetze42/nova-radio-field#readme",
+                "issues": "https://github.com/Muetze42/nova-radio-field/issues",
+                "source": "https://github.com/Muetze42/nova-radio-field"
             },
-            "time": "2018-08-24T08:53:09+00:00"
+            "funding": [
+                {
+                    "url": "https://huth.it/coffee",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://ko-fi.com/normanhuth",
+                    "type": "ko_fi"
+                }
+            ],
+            "time": "2023-07-31T18:29:43+00:00"
         },
         {
             "name": "nova-kit/nova-packages-tool",

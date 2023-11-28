@@ -7,7 +7,7 @@
                         <h2><b>CONTACT</b></h2>
                     </div>
                 </div>
-                <div class="main-contact fade-in">
+                <div class="home-main-contact fade-in">
                     <div class="col-12 d-flex">
                         <div class="col-6"></div>
                         <div class="col-6 contact-form" align="right">

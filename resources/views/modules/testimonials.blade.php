@@ -11,36 +11,18 @@
                     <div class="carousel-inner col-12">
                         <img src="images/carousel-1.jpg" alt="" class="d-block mx-auto slide-in" align="center" width="97%">
                         <div class="carousel-items slide-in">
-                            <div class="carousel-item text-center justify-content-center col-12 active">
-                                <div class="col-12" align="center">
-                                    <div class="info">
-                                        <div class="info-2">
-                                            <h2>DeSvck F4C3</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Neque? lorem ipsum dolor sit, amet consectetur, adipisicing elit.</p>
+                            @foreach($client as $key => $item)
+                                <div class="carousel-item text-center justify-content-center col-12 @if($key) active @endif">
+                                    <div class="col-12" align="center">
+                                        <div class="info">
+                                            <div class="info-2">
+                                                <h2>{{ $item->name }}</h2>
+                                                <p>{{ $item->comment }}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="carousel-item text-center justify-content-center col-12">
-                                <div class="col-12" align="center">
-                                    <div class="info">
-                                        <div class="info-2">
-                                            <h2>Bill gate</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea. ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item text-center justify-content-center col-12">
-                                <div class="col-12" align="center">
-                                    <div class="info">
-                                        <div class="info-2">
-                                            <h2>Steve Jobs</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Excepturi, pariatur? ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                     <a class="carousel-control-prev carousel-nav" href="#slides" data-slide="prev">
