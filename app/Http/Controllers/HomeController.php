@@ -16,11 +16,31 @@ class HomeController extends Controller
     {
         $about = DB::table('abouts')->first();
         $service = DB::table('services')->limit(6)->get();
-        $experience = DB::table('experiences')->get();
-        $education = DB::table('educations')->get();
-        $client = DB::table('clients')->get();
+        $experience = DB::table('experiences')->limit(6)->get();
+        $education = DB::table('educations')->limit(4)->get();
+        $client = DB::table('clients')->limit(10)->get();
 
         return view('home')->with(compact(
+            'about',
+            'service',
+            'experience',
+            'education',
+            'client'
+        ));
+    }
+
+    /**
+     * @return Factory|Application|View|\Illuminate\Contracts\Foundation\Application
+     */
+    public function indexUpgrade(): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
+    {
+        $about = DB::table('abouts')->first();
+        $service = DB::table('services')->limit(6)->get();
+        $experience = DB::table('experiences')->limit(6)->get();
+        $education = DB::table('educations')->limit(4)->get();
+        $client = DB::table('clients')->limit(10)->get();
+
+        return view('home-upgrade')->with(compact(
             'about',
             'service',
             'experience',
