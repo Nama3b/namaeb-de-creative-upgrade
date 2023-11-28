@@ -284,11 +284,122 @@ nav.btn-dark {
     background-color: white;
 }
 
-.experience .exp-item-left {
-}
-
 .experience .exp-item-right {
     text-align: end;
+}
+
+/* ========================================EDUCATION======================================== */
+
+.education {
+    padding: 50px 0;
+    background-color: #141414;
+}
+
+.education .header-education {
+    margin-bottom: 50px;
+}
+
+.education .education-item {
+    font-size: 17px;
+    background-color: #222222;
+    border-radius: 5px;
+    color: white;
+    margin: 29px 0;
+    padding: 23px 19px 20px 19px;
+    transform: rotateX(70deg);
+    transition: transform 500ms ease-in-out;
+}
+
+.education .education-item.appear {
+    transform: rotateX(0deg);
+}
+
+.education .education-item:hover {
+    transition: transform 500ms ease-in-out;
+    transform: scale(1.1, 1.1);
+}
+
+.education .education-item h2 {
+    color: #943d2b;
+}
+
+.education .education-item hr {
+    border-bottom: 2px solid #943d2b;
+    width: 100%;
+}
+
+/* ========================================CONTACT======================================== */
+
+.contact {
+    padding: 50px 0;
+}
+
+.contact .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact .form-group {
+    position: relative;
+    transform: translateX(-150px);
+    transition: transform 1000ms ease-in-out;
+}
+
+.form-group.appear {
+    transform: translateX(0);
+}
+
+.form-group input {
+    background: none;
+    border: 2px solid #943d2b;
+    border-bottom-left-radius: 28px;
+    padding-left: 70px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form-group input:focus {
+    background: none;
+    border: 2px solid darkred;
+    color: white;
+}
+
+.input-1 {
+    margin-left: -167px;
+    margin-right: 100px;
+}
+
+.input-2 {
+    margin-left: -97px;
+    margin-right: 100px;
+}
+
+.input-3 {
+    margin-left: -27px;
+    margin-right: 100px;
+}
+
+.input-4 {
+    margin-left: 37px;
+    margin-right: 100px;
+}
+
+.contact-form button {
+    padding: 2px 15px;
+    font-size: 22px;
+    margin-right: 100px;
+}
+
+#input_img {
+    color: grey;
+    position: absolute;
+    bottom: 14px;
+    left: 22px;
+    font-size: 27px;
 }
 
 /* ========================================FOOTER======================================== */
