@@ -8,18 +8,18 @@ html, body {
 
 /* ==============================HEADER============================== */
 
-#header-section {
+.header {
     height: 69px;
 }
 
-.navbar {
+.header .navbar {
     min-height: 69px !important;
     border-radius: 0 !important;
     margin-bottom: 0 !important;
     background-color: #943d2b;
 }
 
-.fixed-top {
+.header .fixed-top {
     position: fixed;
     top: 0;
     right: 0;
@@ -27,55 +27,116 @@ html, body {
     z-index: 1030;
 }
 
-.navbar button {
+.header .navbar button {
     font-size: 20px;
 }
 
-nav.btn-dark {
+.header nav.btn-dark {
     border: 2px solid white;
 }
 
-.nav-item a {
+.header .nav-item a {
     font-weight: bold;
     font-size: 16px;
     color: white;
     margin-left: 20px;
 }
 
-.nav-item a:hover {
+.header .nav-item a:hover {
     color: black;
     text-decoration: none;
     border-bottom: 3px solid black;
     margin-bottom: -3px;
 }
 
-.nav-item a.active {
+.header .nav-item a.active {
     color: black;
     border-bottom: 3px solid black;
 }
 
-.nav-item a.active:hover {
+.header .nav-item a.active:hover {
     margin-bottom: 0;
+}
+
+.header .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+}
+
+.header .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.header .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.header .slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.header input:checked + .slider {
+    background-color: black;
+}
+
+.header input:checked + .slider:before {
+    transform: translateX(21px);
+}
+
+#home-v2 {
+    display: none;
+}
+
+#home-v2.home {
+    background: url("../image/upgrade/home-background.png") no-repeat fixed;
 }
 
 /* ==============================INTRODUCE============================== */
 
-#introduce .display-1 {
+#home-v2 .introduce .img-section {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#home-v2 .introduce .img-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+#home-v2 .introduce .display-1 {
     width: fit-content;
     padding-top: 555px;
 }
 
-#introduce .display-1:after {
+#home-v2 .introduce .display-1:after {
     display: none;
 }
 
-#introduce .my-name {
-    display: inline-block;
-    border-bottom: 9px double #943d2b;
-}
-
-#introduce div.display-1 .img-section,
-#introduce div.display-1 p {
+#home-v2 .introduce .display-1 .img-section,
+#home-v2 .introduce .display-1 p {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -84,7 +145,7 @@ nav.btn-dark {
     transform-origin: 50%;
 }
 
-#introduce div.display-1 div::before {
+#home-v2 .introduce .display-1 div::before {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -98,208 +159,198 @@ nav.btn-dark {
     transform-origin: 50%;
 }
 
-#introduce div.display-1 p {
+#home-v2 .introduce .display-1 p {
     width: 100px;
     text-transform: none;
     font-size: 30%;
     line-height: 2;
 }
 
-#introduce div.display-1 p i {
+#home-v2 .introduce .display-1 p i {
     padding: 3px;
     margin: 2px 4px;
 }
 
-#introduce .display-1 i.fa-facebook {
+#home-v2 .introduce .display-1 i.fa-facebook {
     border-radius: 29px;
     border: 2px solid blue;
     color: blue;
 }
 
-#introduce i.fa-stack-overflow {
+#home-v2 .introduce i.fa-stack-overflow {
     border-radius: 15px;
     border: 2px solid #ec7c23;
     color: #ec7c23;
 }
 
-#introduce i.fa-github {
+#home-v2 .introduce i.fa-github {
     border-radius: 29px;
     border: 2px solid black;
     color: black;
 }
 
-#introduce i.fa-linkedin {
+#home-v2 .introduce i.fa-linkedin {
     border-radius: 9px;
     border: 2px solid white;
     color: white;
 }
 
-#introduce div.display-1 p a:hover,
-#introduce div.display-1 p a:focus {
+#home-v2 .introduce .display-1 p a:hover,
+#home-v2 .introduce .display-1 p a:focus {
     opacity: 0.6;
 }
 
-#introduce div.display-1 p a i {
+#home-v2 .introduce .display-1 p a i {
     opacity: 0;
     transition: opacity 0.35s, transform 0.35s;
 }
 
-#introduce div.display-1 p a:first-child i {
+#home-v2 .introduce .display-1 p a:first-child i {
     transform: translate3d(-60px, -60px, 0);
 }
 
-#introduce div.display-1 p a:nth-child(2) i {
+#home-v2 .introduce .display-1 p a:nth-child(2) i {
     transform: translate3d(60px, -60px, 0);
 }
 
-#introduce div.display-1 p a:nth-child(3) i {
+#home-v2 .introduce .display-1 p a:nth-child(3) i {
     transform: translate3d(-60px, 60px, 0);
 }
 
-#introduce div.display-1 p a:nth-child(4) i {
+#home-v2 .introduce .display-1 p a:nth-child(4) i {
     transform: translate3d(60px, 60px, 0);
 }
 
-#introduce div.display-1:hover div::before {
+#home-v2 .introduce .display-1:hover div::before {
     opacity: 1;
     transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(1, 1, 1);
 }
 
-#introduce div.display-1:hover .img-section {
+#home-v2 .introduce .display-1:hover .img-section {
     opacity: 0;
     transform: translate3d(-50%, -50%, 0) scale3d(0.8, 0.8, 1);
 }
 
-#introduce div.display-1:hover p i:empty {
+#home-v2 .introduce .display-1:hover p i:empty {
     transform: translate3d(0, 0, 0);
     opacity: 1;
 }
 
-.home {
-    background: url("../image/upgrade/home-background.png") no-repeat fixed;
-}
-
-.introduce .img-section {
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-}
-
-.introduce .img-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
-.introduce .about-content {
-    display: flex;
-}
-
-.introduce .about-content p {
-    color: white;
-}
-
 /* ==============================ABOUT============================== */
 
-.about {
+#home-v2 .about {
     background-color: #141414;
     padding: 50px 0;
 }
 
-.about .about-content {
+#home-v2 .about .about-content {
     display: flex;
     color: white;
 }
 
-.about .about-item {
+#home-v2 .about .about-item {
     background-color: #222222;
-    padding: 10px 20px;
+    padding: 30px 30px 15px 30px;
     margin: 29px 0;
 }
 
-.about .contact-info {
+#home-v2 .about .contact-info {
     display: flex;
 }
 
-.about .contact-info ul li {
+#home-v2 .about .contact-info ul li {
     display: block;
     padding: 3px 0 3px 0;
 }
 
-.about .more-contact-info {
+#home-v2 .about .more-contact-info {
     text-align: end;
     margin-bottom: 20px;
 }
 
-.about .more-contact-info a {
+#home-v2 .about .more-contact-info a {
     color: white;
-    background: #943d2b;
-    padding: 2px 7px 7px 7px;
+    background-color: #943d2b;
+    padding: 4px 7px 7px 7px;
 }
 
-.about .more-contact-info i {
+#home-v2 .about .more-contact-info i {
     margin: 3px;
+}
+
+#home-v2 .about .about-title {
+    position: absolute;
+    background-color: #943d2b;
+    padding: 1px 25px;
+    margin-top: -38px;
+    transform: skew(334deg);
+}
+
+#home-v2 .about .about-title h5 {
+    transform: skew(27deg, 0deg);
+}
+
+#home-v2 .about .about-item p {
+    margin-bottom: 0;
 }
 
 /* ==============================EXPERIENCE============================== */
 
-.experience {
+#home-v2 .experience {
     padding: 50px 0;
 }
 
-.experience .exp-content {
+#home-v2 .experience .exp-content {
     color: white;
 }
 
-.experience .exp-content p {
+#home-v2 .experience .exp-content p {
     margin-bottom: 0;
 }
 
-.experience .exp-content hr {
+#home-v2 .experience .exp-content hr {
     border-bottom: 2px solid white;
 }
 
-.experience .exp-content span {
+#home-v2 .experience .exp-content span {
     text-align: left;
 }
 
-.experience .col-2 {
+#home-v2 .experience .col-2 {
     text-align: center;
 }
 
-.experience .col-2 p {
+#home-v2 .experience .col-2 p {
     position: absolute;
 }
 
-.experience .col-2 i {
+#home-v2 .experience .col-2 i {
     font-size: 25px;
     color: white;
     margin: 0 auto;
+    padding-bottom: 10px;
 }
 
-.vertical-line {
+#home-v2 .experience .exp-item-right {
+    text-align: end;
+}
+
+#home-v2 .experience .vertical-line {
     margin: 0 auto;
     width: 2px;
-    height: 84%;
+    height: 81%;
     background-color: white;
-}
-
-.experience .exp-item-right {
-    text-align: end;
 }
 
 /* ========================================EDUCATION======================================== */
 
-.education {
+#home-v2 .education {
     padding: 50px 0;
     background-color: #141414;
 }
 
-.education .header-education {
-    margin-bottom: 50px;
-}
-
-.education .education-item {
+#home-v2 .education .education-item {
+    text-align: center;
     font-size: 17px;
     background-color: #222222;
     border-radius: 5px;
@@ -310,96 +361,105 @@ nav.btn-dark {
     transition: transform 500ms ease-in-out;
 }
 
-.education .education-item.appear {
+#home-v2 .education .education-item.appear {
     transform: rotateX(0deg);
 }
 
-.education .education-item:hover {
+#home-v2 .education .education-item:hover {
     transition: transform 500ms ease-in-out;
     transform: scale(1.1, 1.1);
 }
 
-.education .education-item h2 {
+#home-v2 .education .education-item ul {
+    text-align: left;
+    padding: 0 20px;
+}
+
+#home-v2 .education .education-item h2 {
     color: #943d2b;
 }
 
-.education .education-item hr {
+#home-v2 .education .education-item hr {
     border-bottom: 2px solid #943d2b;
     width: 100%;
 }
 
 /* ========================================CONTACT======================================== */
 
-.contact {
+#home-v2 .contact {
     padding: 50px 0;
 }
 
-.contact .contact-content {
+#home-v2 .contact .contact-content {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
-    text-align: center;
 }
 
-.contact .form-group {
+#home-v2 .contact .form-group {
     position: relative;
     transform: translateX(-150px);
     transition: transform 1000ms ease-in-out;
 }
 
-.form-group.appear {
+#home-v2 .contact .form-group.appear {
     transform: translateX(0);
 }
 
-.form-group input {
+#home-v2 .contact .form-group input {
     background: none;
     border: 2px solid #943d2b;
     border-bottom-left-radius: 28px;
-    padding-left: 70px;
+    padding-left: 55px;
     height: 50px;
     font-size: 20px;
     color: white;
     margin-bottom: 20px;
 }
 
-.form-group input:focus {
+#home-v2 .contact .form-group input:focus {
     background: none;
     border: 2px solid darkred;
     color: white;
 }
 
-.input-1 {
-    margin-left: -167px;
-    margin-right: 100px;
-}
-
-.input-2 {
-    margin-left: -97px;
-    margin-right: 100px;
-}
-
-.input-3 {
-    margin-left: -27px;
-    margin-right: 100px;
-}
-
-.input-4 {
-    margin-left: 37px;
-    margin-right: 100px;
-}
-
-.contact-form button {
-    padding: 2px 15px;
-    font-size: 22px;
-    margin-right: 100px;
-}
-
-#input_img {
+.contact #input_img {
     color: grey;
     position: absolute;
     bottom: 14px;
     left: 22px;
-    font-size: 27px;
+    font-size: 23px;
+}
+
+#home-v2 .contact .input-1 {
+    margin-left: -167px;
+}
+
+#home-v2 .contact .input-2 {
+    margin-left: -97px;
+}
+
+#home-v2 .contact .input-3 {
+    margin-left: -27px;
+}
+
+#home-v2 .contact .input-4 {
+    margin-left: 57px;
+}
+
+#home-v2 .contact .contact-form button {
+    padding: 2px 15px;
+    font-size: 22px;
+}
+
+#home-v2 .contact .btn-sending {
+    background: #943d2b;
+    border-bottom-left-radius: 28px;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
 }
 
 /* ========================================FOOTER======================================== */

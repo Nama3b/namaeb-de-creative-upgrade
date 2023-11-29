@@ -29,9 +29,15 @@
             </div>
             <div class="col-7">
                 <div class="about-item">
+                    <div class="about-title">
+                        <h5>Description</h5>
+                    </div>
                     <p>{{ $about->description }}</p>
                 </div>
                 <div class="about-item">
+                    <div class="about-title">
+                        <h5>My hobby</h5>
+                    </div>
                     @foreach(json_decode($about->hobby) as $item)
                         <p>- {{ $item }}</p>
                     @endforeach
