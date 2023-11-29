@@ -1,6 +1,5 @@
 <div id="introduce" class="introduce">
     <div class="container">
-        <div class="row text-center">
             <div class="col-12 slide-in">
                 <div class="display-1 fade-in">
                     <div>
@@ -19,6 +18,5 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 </div>

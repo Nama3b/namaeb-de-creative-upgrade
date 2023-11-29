@@ -36,7 +36,7 @@ html, body {
     min-height: 69px !important;
     border-radius: 0 !important;
     margin-bottom:0 !important;
-    background-color: darkred;
+    background-color: #943d2b;
 }
 
 .fixed-top {
@@ -97,7 +97,7 @@ nav.btn-dark {
 
 #home-main .my-name {
     display: inline-block;
-    border-bottom: 9px double darkred;
+    border-bottom: 9px double #943d2b;
 }
 
 div.display-1 .img-section,
@@ -116,7 +116,7 @@ div.display-1 div::before {
     left: 50%;
     width: 200px;
     height: 200px;
-    border: 3px solid darkred;
+    border: 3px solid #943d2b;
     content: '';
     opacity: 0;
     transition: opacity 0.35s, transform 0.35s;
@@ -127,7 +127,7 @@ div.display-1 div::before {
 div.display-1 p {
     width: 100px;
     text-transform: none;
-    font-size: 47%;
+    font-size: 30%;
     line-height: 2;
 }
 
@@ -309,7 +309,7 @@ div.display-1:hover p i:empty {
 
 .display-1 h2 {
     font-size: 29px;
-    color: darkred;
+    color: #943d2b;
     position: relative;
     text-transform: uppercase;
     font-weight: 600;
@@ -345,7 +345,7 @@ div.display-1:hover p i:empty {
 }
 
 .home-main-about .col-lg-4 {
-    border: 2px solid darkred;
+    border: 2px solid #943d2b;
     padding: 29px;
     margin-bottom: 29px;
     height: fit-content;
@@ -368,7 +368,7 @@ div.display-1:hover p i:empty {
 
 .home-main-about .col-lg-7 hr {
     margin-top: 17px;
-    border: 1px solid darkred;
+    border: 1px solid #943d2b;
     width: 100%;
 }
 
@@ -387,10 +387,10 @@ div.display-1:hover p i:empty {
 }
 
 .namaeb-info h4 {
-    color: darkred;
+    color: #943d2b;
     padding-bottom: 3px;
     width: fit-content;
-    border-bottom: 2px solid darkred;
+    border-bottom: 2px solid #943d2b;
 }
 
 .namaeb-info button {
@@ -408,7 +408,7 @@ div.display-1:hover p i:empty {
 
 .more-contact-info a {
     color: white;
-    background: darkred;
+    background: #943d2b;
     padding: 2px 7px 7px 7px;
 }
 
@@ -619,14 +619,14 @@ div.display-1:hover p i:empty {
 }
 
 .service-item h4 {
-    color: darkred;
+    color: #943d2b;
     padding-bottom: 2px;
-    border-bottom: 2px solid darkred;
+    border-bottom: 2px solid #943d2b;
     width: fit-content;
 }
 
 .service-item:hover {
-    border-bottom: 4px solid darkred;
+    border-bottom: 4px solid #943d2b;
     cursor: pointer;
 }
 
@@ -840,7 +840,7 @@ div.display-1:hover p i:empty {
 }
 
 .home-main-experience .col-lg-3 h3 {
-    color: darkred;
+    color: #943d2b;
     font-weight: bold;
 }
 
@@ -869,7 +869,7 @@ div.display-1:hover p i:empty {
 }
 
 .title-ex .info {
-    border: 2px solid darkred;
+    border: 2px solid #943d2b;
     width: 220px;
     height: 220px;
     padding: 64px 0;
@@ -886,7 +886,7 @@ div.display-1:hover p i:empty {
 }
 
 .title-ex .time-line {
-    border: 2px solid darkred;
+    border: 2px solid #943d2b;
     width: 220px;
     height: 220px;
     border-radius: 50%;
@@ -910,7 +910,7 @@ div.display-1:hover p i:empty {
 
 .title-ex .time-line hr {
     margin-top: 15px;
-    border: 2px solid darkred;
+    border: 2px solid #943d2b;
 }
 
 .title-ex .info {
@@ -928,14 +928,6 @@ div.display-1:hover p i:empty {
 .title-ex:hover .time-line {
     opacity: 1;
     transform: translateX(0);
-}
-
-@media (max-width: 1192px) {
-
-}
-
-@media (max-width: 992px) {
-
 }
 
 @media (max-width: 768px) {
@@ -1007,28 +999,12 @@ div.display-1:hover p i:empty {
 }
 
 .home-main-education h2 {
-    color: darkred;
+    color: #943d2b;
 }
 
 .home-main-education hr {
-    border-bottom: 2px solid darkred;
+    border-bottom: 2px solid #943d2b;
     width: 100%;
-}
-
-@media (max-width: 1192px) {
-
-}
-
-@media (max-width: 992px) {
-
-}
-
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 576px) {
-
 }
 
 /* ========================================TESTIMONIALS======================================== */
@@ -1042,13 +1018,13 @@ div.display-1:hover p i:empty {
 }
 
 .carousel-inner {
-    border: 2px solid darkred;
+    border: 2px solid #943d2b;
     padding: 37px 0;
 }
 
 .carousel-inner img {
     height: 555px;
-    border: 2px solid darkred;
+    border: 2px solid #943d2b;
     transform: translateY(200px);
     transition: transform 1.2s ease-in-out;
 }
@@ -1082,14 +1058,14 @@ div.display-1:hover p i:empty {
 }
 
 .info .info-2 {
-    border: 9px double darkred;
+    border: 9px double #943d2b;
     padding: 15px;
 }
 
 .info-2 h2 {
-    color: darkred;
+    color: #943d2b;
     padding-bottom: 8px;
-    border-bottom: 2px solid darkred;
+    border-bottom: 2px solid #943d2b;
 }
 
 .info-2 p {
@@ -1102,8 +1078,8 @@ div.display-1:hover p i:empty {
     height: 55px;
     width: 55px !important;
     transform: rotate(45deg);
-    border-left: 7px solid darkred;
-    border-bottom: 7px solid darkred;
+    border-left: 7px solid #943d2b;
+    border-bottom: 7px solid #943d2b;
     padding: 5px;
     background: black !important;
     opacity: 1 !important;
@@ -1115,8 +1091,8 @@ div.display-1:hover p i:empty {
     height: 55px;
     width: 55px !important;
     transform: rotate(45deg);
-    border-right: 7px solid darkred;
-    border-top: 7px solid darkred;
+    border-right: 7px solid #943d2b;
+    border-top: 7px solid #943d2b;
     padding: 5px;
     background: black !important;
     opacity: 1 !important;
@@ -1137,21 +1113,9 @@ div.display-1:hover p i:empty {
 }
 
 span.carousel-space {
-    background: darkred;
+    background: #943d2b;
     width: 44px;
     height: 37px;
-}
-
-@media (max-width: 1192px) {
-
-}
-
-@media (max-width: 992px) {
-
-}
-
-@media (max-width: 768px) {
-
 }
 
 @media (max-width: 576px) {
@@ -1196,7 +1160,7 @@ span.carousel-space {
 
 .form-group input {
     background: none;
-    border: 3px solid darkred;
+    border: 3px solid #943d2b;
     border-bottom-left-radius: 55px;
     padding-left: 77px;
     height: 60px;
@@ -1211,22 +1175,22 @@ span.carousel-space {
     color: white;
 }
 
-.input-1 {
+#home-v1 .input-1 {
     margin-left: -203px;
     margin-right: 100px;
 }
 
-.input-2 {
+#home-v1 .input-2 {
     margin-left: -123px;
     margin-right: 100px;
 }
 
-.input-3 {
+#home-v1 .input-3 {
     margin-left: -45px;
     margin-right: 100px;
 }
 
-.input-4 {
+#home-v1 .input-4 {
     margin-left: 37px;
     margin-right: 100px;
 }
@@ -1238,7 +1202,7 @@ span.carousel-space {
 }
 
 #input_img {
-    color: darkred;
+    color: #943d2b;
     position: absolute;
     bottom: 14px;
     left: 22px;
@@ -1256,7 +1220,7 @@ span.carousel-space {
 
     .form-group input {
         background: none;
-        border: 3px solid darkred;
+        border: 3px solid #943d2b;
         border-bottom-left-radius: 49px;
         height: 49px;
         font-size: 19px;
@@ -1314,7 +1278,7 @@ span.carousel-space {
 
     .form-group input {
         background: none;
-        border: 3px solid darkred;
+        border: 3px solid #943d2b;
         border-bottom-left-radius: 44px;
         height: 44px;
         font-size: 18px;
@@ -1372,7 +1336,7 @@ span.carousel-space {
 
     .form-group input {
         background: none;
-        border: 3px solid darkred;
+        border: 3px solid #943d2b;
         border-bottom-left-radius: 33px;
         height: 33px;
         font-size: 15px;
@@ -1430,7 +1394,7 @@ span.carousel-space {
 
     .form-group input {
         background: none;
-        border: 3px solid darkred;
+        border: 3px solid #943d2b;
         border-bottom-left-radius: 33px;
         height: 33px;
         font-size: 15px;
@@ -1478,7 +1442,7 @@ span.carousel-space {
 #footer {
     margin-top: 33px;
     height: 73px;
-    background: darkred;
+    background: #943d2b;
 }
 
 #footer .col-12 {
