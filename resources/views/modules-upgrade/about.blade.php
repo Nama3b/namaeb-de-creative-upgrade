@@ -1,16 +1,16 @@
 <div id="about" class="about">
     <div class="container">
         <div class="about-content">
-            <div class="col-5">
+            <div class="col-12 col-md-5">
                 <div class="about-item">
                     <h4><b>Hellou! My name's {{ $about->name }}</b></h4>
                     <p>{{ $about->title }}</p>
                     <div class="contact-info">
-                        <ul class="col-12 col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                        <ul class="col-12 col-md-5">
                             <li><i class="fas fa-user-secret"></i> - {{ $about->name }}</li>
                             <li><i class="fas fa-home"></i> - {{ $about->address }}</li>
                         </ul>
-                        <ul class="col-12 col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                        <ul class="col-12 col-md-7">
                             <li><i class="fas fa-phone-alt"></i> - {{ $about->phone_number }}</li>
                             <li><i class="far fa-envelope-open"></i> - {{ $about->email }}</li>
                         </ul>
@@ -27,7 +27,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-7">
+            <div class="col-12 col-md-7">
                 <div class="about-item">
                     <div class="about-title">
                         <h5>Description</h5>

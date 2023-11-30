@@ -42,6 +42,11 @@ html, body {
     margin-left: 20px;
 }
 
+.header .nav-item small {
+    color: white;
+    padding: 0 5px;
+}
+
 .header .nav-item a:hover {
     color: black;
     text-decoration: none;
@@ -265,7 +270,11 @@ html, body {
 
 #home-v2 .about .more-contact-info {
     text-align: end;
-    margin-bottom: 20px;
+    margin: 20px 0;
+}
+
+#home-v2 .about .contact-info ul {
+    margin-bottom: 0;
 }
 
 #home-v2 .about .more-contact-info a {
@@ -281,6 +290,7 @@ html, body {
 #home-v2 .about .about-title {
     position: absolute;
     background-color: #943d2b;
+    right: 40px;
     padding: 1px 25px;
     margin-top: -38px;
     transform: skew(334deg);
@@ -331,6 +341,11 @@ html, body {
     padding-bottom: 10px;
 }
 
+#home-v2 .experience .end-date {
+    top: 0;
+    right: 15px;
+}
+
 #home-v2 .experience .exp-item-right {
     text-align: end;
 }
@@ -375,6 +390,10 @@ html, body {
     padding: 0 20px;
 }
 
+#home-v2 .education .education-item li {
+    display: block;
+}
+
 #home-v2 .education .education-item h2 {
     color: #943d2b;
 }
@@ -411,6 +430,7 @@ html, body {
     border: 2px solid #943d2b;
     border-bottom-left-radius: 28px;
     padding-left: 55px;
+    width: 96%;
     height: 50px;
     font-size: 20px;
     color: white;
@@ -426,9 +446,9 @@ html, body {
 .contact #input_img {
     color: grey;
     position: absolute;
-    bottom: 14px;
-    left: 22px;
-    font-size: 23px;
+    bottom: 32px;
+    left: 19px;
+    font-size: 27px;
 }
 
 #home-v2 .contact .input-1 {

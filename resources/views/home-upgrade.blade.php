@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{{asset('css/home.css')}}">
     <link rel="stylesheet" href="{{asset('css/home-upgrade.css')}}">
     <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
+
+    <!-- font-awesome -->
     <link rel="stylesheet" href="{{asset('assets/fontawesome/css/all.css')}}">
     <link rel="stylesheet" href="{{asset('assets/font-awesome-4.7.0/css/font-awesome.min.css')}}">
 
@@ -73,4 +75,8 @@
 <!-- ICON -->
 <script defer src="{{asset('assets/fontawesome/js/fontawesome.js')}}"></script>
 <script src="{{asset('assets/js/index.js')}}"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
