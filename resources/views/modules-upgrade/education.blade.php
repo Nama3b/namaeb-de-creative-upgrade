@@ -8,7 +8,7 @@
                     <hr>
                     <ul>
                         @foreach(json_decode($item->content) as $content_item)
-                            <ul>{{ $content_item }}</ul>
+                            <li>{{ $content_item }}</li>
                         @endforeach
                     </ul>
                 </div>
