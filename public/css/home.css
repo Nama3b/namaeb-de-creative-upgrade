@@ -80,10 +80,9 @@ nav.btn-dark {
 
 /* =========================================MAIN========================================= */
 
-#home-v1 #home-main {
+ #home-main {
     background: url("/image/header-background.jpg") no-repeat;
-    background-size: 100%;
-    height: 547px;
+    background-size: cover;
 }
 
 #home-v1 #home-main .display-1 {
@@ -263,6 +262,10 @@ nav.btn-dark {
     left: -77%;
 }
 
+#home-v1 .about-item {
+    display: flex;
+}
+
 #home-v1 .home-main-about .col-lg-4, .col-lg-7 {
     background: #16171b;
     border-radius: 5px;
@@ -385,7 +388,9 @@ nav.btn-dark {
     animation: waterMove 3s infinite;
 }
 
-#home-v1 .water-action-1, .water-action-2, .water-action-3 {
+#home-v1 .water-action-1,
+#home-v1 .water-action-2,
+#home-v1 .water-action-3 {
     animation-timing-function: ease-in;
 }
 
@@ -442,7 +447,8 @@ nav.btn-dark {
     transform: translateX(100px);
 }
 
-#home-v1 .service-left, .service-right {
+#home-v1 .service-left,
+#home-v1 .service-right {
     transition: transform 2000ms ease-out;
 }
 
@@ -544,7 +550,8 @@ nav.btn-dark {
     transform: translateX(100px);
 }
 
-#home-v1 .experience-topic.appear, .experience-content.appear {
+#home-v1 .experience-topic.appear,
+#home-v1 .experience-content.appear {
     transition: transform 1500ms ease-in-out;
     transform: translateX(0);
 }
