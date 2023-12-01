@@ -382,10 +382,6 @@
 }
 
 @media (max-width: 320px) {
-    #home-v1 .my-name img {
-        width: 40%;
-    }
-
     #introduce .display-1 {
         width: fit-content !important;
         padding-top: 270px !important;
@@ -427,26 +423,40 @@
         height: 100px !important;
     }
 
+    #home-v1 .about-item {
+        display: block;
+    }
+
     /*introduce*/
-    .home-main-about .col-lg-7 {
+    #home-v1 .home-main-about .col-lg-7 {
         margin-left:0 !important;
         font-size: 13px;
     }
 
-    .img-section {
-        height: 151px !important;
-    }
-
-    .img-section img.my-name-2 {
-        margin-top: -49px !important;
-    }
-
-    .home-main-about .col-12 {
+    #home-v1 .home-main-about .col-12 {
         display: block !important;
     }
 
-    .contact-info {
+    #home-v1 .contact-info {
         display: contents !important;
+    }
+
+    #home-v1 .img-section img {
+        width: 100%;
+    }
+
+    #home-v1 .display-1:after {
+        width: 80%;
+    }
+
+    #home-v1 .service-main .service-item {
+        width: 38%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #home-v1 .service-main .service-item img{
+        width: 30%;
     }
 
     /*service*/
@@ -551,29 +561,29 @@
 }
 
 @media (max-width: 375px) {
-    .water-action-1, .water-action-2, .water-action-3 {
-        top: 1655px;
-    }
+    /*.water-action-1, .water-action-2, .water-action-3 {*/
+    /*    top: 1655px;*/
+    /*}*/
 
-    .div-space {
-        height: 999px;
-    }
+    /*.div-space {*/
+    /*    height: 999px;*/
+    /*}*/
 
-    .service-left, .service-right {
-        height: 300px;
-    }
+    /*.service-left, .service-right {*/
+    /*    height: 300px;*/
+    /*}*/
 
-    .service-left img, .service-right img {
-        width: 80%;
-    }
+    /*.service-left img, .service-right img {*/
+    /*    width: 80%;*/
+    /*}*/
 
-    .service-left .info p, .service-right .info p {
-        font-size: 8px !important;
-    }
+    /*.service-left .info p, .service-right .info p {*/
+    /*    font-size: 8px !important;*/
+    /*}*/
 
-    .border-left, .border-right {
-        height: 1829px;
-    }
+    /*.border-left, .border-right {*/
+    /*    height: 1829px;*/
+    /*}*/
 }
 
 
@@ -690,7 +700,7 @@
     /*introduce*/
     #home-v2 .introduce .img-section img {
         width: 50%;
-        height: 100%;
+        height: 50%;
     }
 
     #home-v2 .introduce .display-1 i {

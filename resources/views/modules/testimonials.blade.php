@@ -1,4 +1,4 @@
-<section id="testimonials">
+<div id="testimonials">
     <div class="container">
         <div class="row justify-content-center text-center">
             <div class="col-12">
@@ -9,10 +9,12 @@
                 </div>
                 <div id="slides" class="carousel slide carousel-fade fade-in" data-ride="carousel">
                     <div class="carousel-inner col-12">
-                        <img src="images/carousel-1.jpg" alt="" class="d-block mx-auto slide-in" align="center" width="97%">
+                        <img src="images/carousel-1.jpg" alt="" class="d-block mx-auto slide-in" align="center"
+                             width="97%">
                         <div class="carousel-items slide-in">
                             @foreach($client as $key => $item)
-                                <div class="carousel-item text-center justify-content-center col-12 @if($key) active @endif">
+                                <div
+                                    class="carousel-item text-center justify-content-center col-12 @if($key) active @endif">
                                     <div class="col-12" align="center">
                                         <div class="info">
                                             <div class="info-2">
@@ -33,4 +35,4 @@
             </div>
         </div>
     </div>
-</section>
+</div>
