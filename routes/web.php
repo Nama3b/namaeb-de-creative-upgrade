@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
-Route::get('/home', [HomeController::class, 'index']);
-Route::get('/home-upgrade', [HomeController::class, 'indexUpgrade']);
+Route::get('/', [HomeController::class, 'indexUpgrade']);
+Route::get('/home', [HomeController::class, 'indexUpgrade']);
+Route::get('/my-portfolio', [HomeController::class, 'myPortfolio']);

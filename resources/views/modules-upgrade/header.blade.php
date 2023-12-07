@@ -12,18 +12,16 @@
                     <li class="nav-item"><a href="#experience" class="nav-link scroll">EXPERIENCE</a></li>
                     <li class="nav-item"><a href="#education" class="nav-link scroll">EDUCATION</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+                    <li class="nav-item"><a href="{{ URL::to('my-portfolio') }}" class="nav-link">MY CV</a></li>
                     <li class="nav-item ml-3 d-flex align-items-center">
                         <small>v.1</small>
                         <label class="switch">
-                            <input type="checkbox" id="switchVersion">
+                            <input type="checkbox" id="switchVersion" checked>
                             <span class="slider"></span>
                         </label>
                         <small>v.2</small>
                     </li>
                 </ul>
-{{--                <div class="nav navbar-nav ml-auto"">--}}
-{{--                    --}}
-{{--                </div>--}}
             </div>
         </div>
     </nav>

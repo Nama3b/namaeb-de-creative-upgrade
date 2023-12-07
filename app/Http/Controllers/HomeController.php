@@ -48,4 +48,12 @@ class HomeController extends Controller
             'client'
         ));
     }
+
+    /**
+     * @return Factory|Application|View|\Illuminate\Contracts\Foundation\Application
+     */
+    public function myPortfolio(): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
+    {
+        return view('home');
+    }
 }

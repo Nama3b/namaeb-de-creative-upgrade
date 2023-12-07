@@ -1,0 +1,194 @@
+.home-cv {
+}
+
+.home-cv .profile-side {
+    height: 100%;
+    width: 450px;
+    margin-left: 50px;
+    padding: 0 30px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f0f0f0;
+    color: #d1cdc7;
+}
+
+.home-cv .description p {
+    margin-bottom: 0;
+}
+
+.home-cv .introduce h4,
+.home-cv .contact h4,
+.home-cv .education h4,
+.home-cv .reference h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.home-cv .introduce h4 i,
+.home-cv .description h4 i {
+    margin-right: 10px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    padding: 9px;
+}
+
+.home-cv .about h4 i,
+.home-cv .experience h4 i,
+.home-cv .skill h4 i,
+.home-cv .lang-hob h4 i {
+    margin-right: 10px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    padding: 9px;
+}
+
+.home-cv .introduce {
+    text-align: center;
+    padding: 20px 15px;
+    background: #1f2129;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.home-cv .introduce img {
+    width: 329px;
+    height: 310px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.home-cv .description {
+    bottom: 0;
+    position: fixed;
+    width: 390px;
+    padding: 20px 40px 20px 40px;
+    background: #1f2129;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+}
+
+.home-cv .education {
+    margin-top: 50px;
+}
+
+.home-cv .profile-body {
+    margin-left: 500px;
+    padding: 50px 0;
+    color: black;
+}
+
+.home-cv .col-1 {
+    text-align: center;
+}
+
+.home-cv .vertical-line {
+    margin: 0 auto;
+    width: 3px;
+    height: 90%;
+    background-color: grey;
+}
+
+.home-cv .about {
+    margin: 50px 0;
+    display: flex;
+}
+
+.home-cv .experience {
+    margin: 50px 0;
+    display: flex;
+}
+
+.home-cv .experience .col-8 {
+    padding: 0 !important;
+}
+
+.home-cv .experience .col-8 h5 {
+    margin-bottom: 0;
+}
+
+.home-cv .experience p {
+    margin: 1rem 0;
+}
+
+.home-cv .skill {
+    margin: 50px 0;
+    display: flex;
+}
+
+.home-cv .skill-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    gap: 20px;
+}
+
+.home-cv .skill-item {
+    display: flex;
+    align-items: center;
+}
+
+.home-cv .skill-item .col-4 p {
+    margin: 0;
+}
+
+.home-cv .skill-item .col-8 {
+    background: grey;
+    height: 30%;
+    padding: 0;
+}
+
+
+.home-cv .about h4,
+.home-cv .experience h4,
+.home-cv .skill h4,
+.home-cv .lang-hob h4 {
+    font-weight: bold;
+}
+
+.home-cv .skill-item .laravel-progress,
+.home-cv .skill-item .vuejs-progress,
+.home-cv .skill-item .devops-progress,
+.home-cv .skill-item .pm-progress,
+.home-cv .skill-item .gm-progress {
+    background: black;
+    height: 100%;
+}
+
+.home-cv .skill-item .laravel-progress {
+    width: 90%;
+}
+
+.home-cv .skill-item .vuejs-progress {
+    width: 70%;
+}
+
+.home-cv .skill-item .devops-progress {
+    width: 80%;
+}
+
+.home-cv .skill-item .pm-progress {
+    width: 85%;
+}
+
+.home-cv .skill-item .gm-progress {
+    width: 60%;
+}
+
+.home-cv .lang-hob {
+    margin: 50px 0;
+    display: flex;
+}
+
+.home-cv .lang-hob .col-11 {
+    display: flex;
+}
+
+.home-cv .language,
+.home-cv .hobby {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 20px;
+}
