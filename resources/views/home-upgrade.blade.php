@@ -9,6 +9,7 @@
     <link href="{{asset('image/logo.jpg')}}" rel="icon">
     <link rel="stylesheet" href="{{asset('css/home.css')}}">
     <link rel="stylesheet" href="{{asset('css/home-upgrade.css')}}">
+    <link rel="stylesheet" href="{{asset('css/home-cv.css')}}">
     <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
 
     <!-- font-awesome -->

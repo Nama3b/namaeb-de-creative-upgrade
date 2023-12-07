@@ -108,7 +108,7 @@ html, body {
     transform: translateX(21px);
 }
 
-#home-v2 {
+#home-v1 {
     display: none;
 }
 
@@ -245,7 +245,7 @@ html, body {
 
 #home-v2 .about {
     background-color: #141414;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 #home-v2 .about .about-content {
@@ -307,7 +307,7 @@ html, body {
 /* ==============================EXPERIENCE============================== */
 
 #home-v2 .experience {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 #home-v2 .experience .exp-content {
@@ -406,7 +406,7 @@ html, body {
 /* ========================================CONTACT======================================== */
 
 #home-v2 .contact {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 #home-v2 .contact .contact-content {
