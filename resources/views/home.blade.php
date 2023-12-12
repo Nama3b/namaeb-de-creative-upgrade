@@ -24,11 +24,11 @@
 
 <div id="home-cv" class="home-cv">
     <div id="profile-side" class="profile-side">
-        <div class="introduce">
+        <div id="introduce" class="introduce">
             <h4>LE THANH LONG</h4>
             <p>Lorem ipsum dolor sit amet.</p>
             <img
-                src="https://scontent.fhan14-3.fna.fbcdn.net/v/t1.15752-9/403669435_875919380936417_1536252136765944219_n.jpg?stp=dst-jpg_s2048x2048&_nc_cat=104&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=W0gvWcdHqmYAX8F3Bfn&_nc_ht=scontent.fhan14-3.fna&oh=03_AdSONvomgq2AuuD1Wb_YNyftrd7VO9LpCnHOWa3ouzQB0g&oe=65866F11"
+                src="https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/403398627_7326263987384781_4654679630368901403_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=ISsUjOkZMakAX_4ybqB&_nc_ht=scontent.fhan18-1.fna&oh=03_AdQfQ-RGrEbY89lX-4oq5iJ39QNCqTTsAe74ZbivQy7-hQ&oe=659D16FE"
                 alt="">
         </div>
         {{--        <div class="contact">--}}
@@ -39,7 +39,7 @@
         {{--                <li><i class=""></i>Dong Anh, Ha Noi, Viet Nam.</li>--}}
         {{--            </ul>--}}
         {{--        </div>--}}
-        <div class="description">
+        <div id="description" class="description">
             <div class="education">
                 <h4><i class="fas fa-graduation-cap"></i>EDUCATION</h4>
                 <div class="education-item">
@@ -72,6 +72,10 @@
     </div>
     <div id="mainBody" class="profile-body">
         <div class="container">
+            <label class="switch">
+                <input type="checkbox" id="switchMode">
+                <span class="slider"></span>
+            </label>
             <div class="about">
                 <div class="col-1">
                     <i class="far fa-dot-circle"></i>
@@ -112,6 +116,7 @@
                             laborum
                             mollitia quo quod sed, sequi similique unde!</p>
                     </div>
+                    <hr>
                     <div class="experience-item">
                         <div class="d-flex">
                             <div class="col-8">
@@ -127,6 +132,7 @@
                             laborum
                             mollitia quo quod sed, sequi similique unde!</p>
                     </div>
+                    <hr>
                     <div class="experience-item">
                         <div class="d-flex">
                             <div class="col-8">
@@ -223,8 +229,31 @@
         </div>
     </div>
 </div>
-</div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const body = document.getElementById('home-cv');
+        const profileSide = document.getElementById('profile-side');
+        const introduce = document.getElementById('introduce');
+        const description = document.getElementById('description');
+
+        const switchButton = document.getElementById('switchMode');
+
+        switchButton.addEventListener('change', function () {
+            if (switchButton.checked) {
+                body.classList.add('dark-mode');
+                profileSide.classList.add('profile-side-dark');
+                introduce.classList.add('introduce-dark');
+                description.classList.add('description-dark');
+            } else {
+                body.classList.remove('dark-mode');
+                profileSide.classList.remove('profile-side-dark');
+                introduce.classList.remove('introduce-dark');
+                description.classList.remove('description-dark');
+            }
+        });
+    });
+</script>
 <!-- ICON -->
 <script defer src="{{asset('assets/fontawesome/js/fontawesome.js')}}"></script>
 <script src="{{asset('assets/js/index.js')}}"></script>

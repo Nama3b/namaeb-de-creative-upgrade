@@ -1,4 +1,67 @@
-.home-cv {
+body {
+    transition: background-color 0.5s ease;
+}
+
+.dark-mode {
+    background: #181c26;
+    color: #d1cdc7;
+}
+
+.home-cv .profile-side-dark {
+    background-color: #2a2d38 !important;
+}
+
+.home-cv .introduce-dark {
+    background: #181c26 !important;
+}
+
+.home-cv .description-dark {
+    background: #181c26 !important;
+}
+
+.home-cv .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+}
+
+.home-cv .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.home-cv .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.home-cv .slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.home-cv input:checked + .slider {
+    background-color: black;
+}
+
+.home-cv input:checked + .slider:before {
+    transform: translateX(21px);
 }
 
 .home-cv .profile-side {
@@ -55,8 +118,8 @@
 }
 
 .home-cv .introduce img {
-    width: 329px;
-    height: 310px;
+    width: 320px;
+    height: 300px;
     border-radius: 50%;
     border: 5px solid white;
 }
@@ -72,13 +135,11 @@
 }
 
 .home-cv .education {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .home-cv .profile-body {
     margin-left: 500px;
-    padding: 50px 0;
-    color: black;
 }
 
 .home-cv .col-1 {
@@ -93,13 +154,17 @@
 }
 
 .home-cv .about {
-    margin: 50px 0;
+    padding: 50px 0 25px 0;
     display: flex;
 }
 
 .home-cv .experience {
-    margin: 50px 0;
+    padding: 25px 0 25px 0;
     display: flex;
+}
+
+.home-cv .experience hr {
+    border-bottom: 1px solid grey;
 }
 
 .home-cv .experience .col-8 {
@@ -115,7 +180,7 @@
 }
 
 .home-cv .skill {
-    margin: 50px 0;
+    padding: 25px 0 25px 0;
     display: flex;
 }
 
@@ -128,6 +193,10 @@
 .home-cv .skill-item {
     display: flex;
     align-items: center;
+}
+
+.home-cv .skill-item .col-4 {
+    padding: 0 !important;
 }
 
 .home-cv .skill-item .col-4 p {
@@ -146,6 +215,7 @@
 .home-cv .skill h4,
 .home-cv .lang-hob h4 {
     font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .home-cv .skill-item .laravel-progress,
@@ -178,8 +248,12 @@
 }
 
 .home-cv .lang-hob {
-    margin: 50px 0;
+    padding: 50px 0;
     display: flex;
+}
+
+.home-cv .lang-hob .col-6 {
+    padding: 0;
 }
 
 .home-cv .lang-hob .col-11 {
