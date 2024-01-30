@@ -1,0 +1,282 @@
+body {
+    transition: background-color 0.5s ease;
+}
+
+.dark-mode {
+    background: #181c26;
+    color: #d1cdc7;
+}
+
+.home-cv .profile-side-dark {
+    background-color: #2a2d38 !important;
+}
+
+.home-cv .introduce-dark {
+    background: #181c26 !important;
+}
+
+.home-cv .description-dark {
+    background: #181c26 !important;
+}
+
+.home-cv .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    float: right;
+    margin-top: 10px;
+}
+
+.home-cv .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.home-cv .switch i.fa-sun-o {
+    margin-top: 3px;
+    margin-left: -28px;
+    font-size: 22px;
+}
+
+.home-cv .switch i.fa-moon-o {
+    margin-top: 3px;
+    margin-left: 64px;
+    font-size: 23px;
+}
+
+.home-cv .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.home-cv .slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.home-cv input:checked + .slider {
+    background-color: black;
+}
+
+.home-cv input:checked + .slider:before {
+    transform: translateX(21px);
+}
+
+.home-cv .profile-side {
+    height: 100%;
+    width: 450px;
+    margin-left: 50px;
+    padding: 0 30px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f0f0f0;
+    color: #d1cdc7;
+}
+
+.home-cv .description p {
+    margin-bottom: 0;
+}
+
+.home-cv .introduce h4,
+.home-cv .contact h4,
+.home-cv .education h4,
+.home-cv .reference h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.home-cv .introduce h4 i,
+.home-cv .description h4 i {
+    margin-right: 10px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    padding: 9px;
+}
+
+.home-cv .about h4 i,
+.home-cv .experience h4 i,
+.home-cv .skill h4 i,
+.home-cv .lang-hob h4 i {
+    margin-right: 10px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    padding: 9px;
+}
+
+.home-cv .introduce {
+    text-align: center;
+    padding: 20px 15px;
+    background: #1f2129;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.home-cv .introduce img {
+    width: 320px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.home-cv .description {
+    bottom: 0;
+    position: fixed;
+    width: 390px;
+    padding: 20px 40px 20px 40px;
+    background: #1f2129;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+}
+
+.home-cv .education {
+    margin-top: 30px;
+}
+
+.home-cv .profile-body {
+    margin-left: 500px;
+}
+
+.home-cv .col-1 {
+    text-align: center;
+}
+
+.home-cv .vertical-line {
+    margin: 0 auto;
+    width: 3px;
+    height: 90%;
+    background-color: grey;
+}
+
+.home-cv .about {
+    padding: 50px 0 25px 0;
+    display: flex;
+}
+
+.home-cv .experience {
+    padding: 25px 0 25px 0;
+    display: flex;
+}
+
+.home-cv .experience hr {
+    border-bottom: 1px solid grey;
+}
+
+.home-cv .experience .col-8 {
+    padding: 0 !important;
+}
+
+.home-cv .experience .col-8 h5 {
+    margin-bottom: 0;
+}
+
+.home-cv .experience p {
+    margin: 1rem 0;
+}
+
+.home-cv .skill {
+    padding: 25px 0 25px 0;
+    display: flex;
+}
+
+.home-cv .skill-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    gap: 20px;
+}
+
+.home-cv .skill-item {
+    display: flex;
+    align-items: center;
+}
+
+.home-cv .skill-item .col-4 {
+    padding: 0 !important;
+}
+
+.home-cv .skill-item .col-4 p {
+    margin: 0;
+}
+
+.home-cv .skill-item .col-8 {
+    background: grey;
+    height: 30%;
+    padding: 0;
+}
+
+
+.home-cv .about h4,
+.home-cv .experience h4,
+.home-cv .skill h4,
+.home-cv .lang-hob h4 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.home-cv .skill-item .laravel-progress,
+.home-cv .skill-item .vuejs-progress,
+.home-cv .skill-item .devops-progress,
+.home-cv .skill-item .pm-progress,
+.home-cv .skill-item .gm-progress {
+    background: black;
+    height: 100%;
+}
+
+.home-cv .skill-item .laravel-progress {
+    width: 90%;
+}
+
+.home-cv .skill-item .vuejs-progress {
+    width: 70%;
+}
+
+.home-cv .skill-item .devops-progress {
+    width: 80%;
+}
+
+.home-cv .skill-item .pm-progress {
+    width: 85%;
+}
+
+.home-cv .skill-item .gm-progress {
+    width: 60%;
+}
+
+.home-cv .lang-hob {
+    padding: 50px 0;
+    display: flex;
+}
+
+.home-cv .lang-hob .col-6 {
+    padding: 0;
+}
+
+.home-cv .lang-hob .col-11 {
+    display: flex;
+}
+
+.home-cv .language,
+.home-cv .hobby {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 20px;
+}

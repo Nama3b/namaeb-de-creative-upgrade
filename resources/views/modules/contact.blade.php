@@ -1,4 +1,4 @@
-<section id="contact">
+<div id="contact">
     <div class="container-fluid">
         <div class="row justify-content-center text-center">
             <div class="col-12">
@@ -21,7 +21,8 @@
                                     <i class="fas fa-mail-bulk" id="input_img"></i>
                                 </div>
                                 <div class="form-group input-3 fade-in slide-in">
-                                    <input type="text" class="form-control" name="" placeholder="Enter your phone number">
+                                    <input type="text" class="form-control" name=""
+                                           placeholder="Enter your phone number">
                                     <i class="fa fa-phone-square" id="input_img"></i>
                                 </div>
                                 <div class="form-group input-4 fade-in slide-in">
@@ -36,4 +37,4 @@
             </div>
         </div>
     </div>
-</section>
+</div>
