@@ -22,7 +22,7 @@ return new class extends Migration
             $table->date('birthday');
             $table->boolean('gender')->nullable();
             $table->json('relate_url')->nullable();
-            $table->text('hobby')->nullable();
+            $table->json('hobby')->nullable();
             $table->text('image');
             $table->text('cv_url')->nullable();
             $table->timestamps();

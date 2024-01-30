@@ -7,7 +7,12 @@
     <title>Namaeb De Creative</title>
 
     <link href="{{asset('image/logo.jpg')}}" rel="icon">
+    <link rel="stylesheet" href="{{asset('css/home.css')}}">
     <link rel="stylesheet" href="{{asset('css/home-upgrade.css')}}">
+    <link rel="stylesheet" href="{{asset('css/home-cv.css')}}">
+    <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
+
+    <!-- font-awesome -->
     <link rel="stylesheet" href="{{asset('assets/fontawesome/css/all.css')}}">
     <link rel="stylesheet" href="{{asset('assets/font-awesome-4.7.0/css/font-awesome.min.css')}}">
 
@@ -19,52 +24,60 @@
 </head>
 <body>
 
-    <!-- header -->
-    @include('modules-upgrade.header')
+<!-- header -->
+@include('modules-upgrade.header')
 
+<div id="home-v1" class="home">
     <!-- home main -->
-    <div class="home">
+    @include('modules.home-main')
 
-        <!-- introduce -->
-        @include('modules-upgrade.introduce')
-
-        <!-- about -->
-{{--        <div id="about">--}}
-{{--            <div class="about">--}}
-{{--                <div class="container-fluid">--}}
-{{--                    <div class="row">--}}
-{{--                        <div class="col-6">--}}
-{{--                            <img src="{{ $about->image }}" alt="">--}}
-{{--                        </div>--}}
-{{--                        <div class="col-6">--}}
-{{--                            <div class="about-info">--}}
-{{--                                <h4></h4>--}}
-
-{{--                            </div>--}}
-
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-
-    </div>
+    <!-- about -->
+    @include('modules.about')
 
     <!-- introduce -->
+    @include('modules.introduce')
 
     <!-- experience -->
+    @include('modules.experience')
 
     <!-- education -->
+    @include('modules.education')
 
     <!-- testimonials -->
+    @include('modules.testimonials')
 
     <!-- contact -->
+    @include('modules.contact')
+</div>
 
-    <!-- footer -->
-    @include('modules-upgrade.footer')
+<!-- home main -->
+<div id="home-v2" class="home">
+
+    <!-- introduce -->
+    @include('modules-upgrade.introduce')
+
+    <!-- about -->
+    @include('modules-upgrade.about')
+
+    <!-- experience -->
+    @include('modules-upgrade.experience')
+
+    <!-- education -->
+    @include('modules-upgrade.education')
+
+    <!-- contact -->
+    @include('modules-upgrade.contact')
+
+</div>
+
+<!-- footer -->
+@include('modules-upgrade.footer')
 
 <!-- ICON -->
 <script defer src="{{asset('assets/fontawesome/js/fontawesome.js')}}"></script>
 <script src="{{asset('assets/js/index.js')}}"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
